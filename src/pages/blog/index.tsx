@@ -1,5 +1,10 @@
+import Container from "@/components/container";
 import Hero from "@/components/hero";
 
 export default function Blog() {
-    return <Hero></Hero>
+    return (
+        <Container>
+            <Hero prop={{title:"Blog", subtitle:"Recent Posts"}}></Hero>
+        </Container>
+    )
 }
