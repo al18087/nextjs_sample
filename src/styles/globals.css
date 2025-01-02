@@ -40,13 +40,25 @@
         font-size: var(--heading3);
     }
 
-    body, h1, h2, h3, p, figure, ul {
+    span>img {
+        transition: 0.2s;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    figure,
+    ul {
         margin: 0;
         padding: 0;
         list-style: none;
     }
 
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
         box-sizing: border-box;
     }
 
