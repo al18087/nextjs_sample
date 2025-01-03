@@ -1,10 +1,12 @@
 import Container from "@/components/container"
 import Hero from "@/components/hero"
+import Meta from "@/components/meta"
 
 export default function Home() {
   return (
     <Container>
-      <Hero prop={{title:"CUBE", subtitle:"アウトプットしていくサイト"}} imageOn></Hero>
+      <Meta></Meta>
+      <Hero prop={{ title: "CUBE", subtitle: "アウトプットしていくサイト" }} imageOn></Hero>
     </Container>
   )
 }

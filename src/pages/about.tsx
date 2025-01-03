@@ -1,6 +1,8 @@
+import Accordion from "@/components/accordion";
 import Contact from "@/components/contact";
 import Container from "@/components/container";
 import Hero from "@/components/hero";
+import Meta from "@/components/meta";
 import PostBody from "@/components/post-body";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "@/components/two-column";
 import eyecatch from "@/images/about.jpg";
@@ -9,6 +11,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <Container>
+            <Meta pageTitle="アバウト" pageDesc="About development activities" pageImg={eyecatch.src} pageImgW={eyecatch.width} pageImgH={eyecatch.height}></Meta>
             <Hero prop={{ title: "About", subtitle: "About development activities" }}></Hero>
 
             <figure>
@@ -33,6 +36,17 @@ export default function About() {
                             失敗を恐れず、学びの機会として捉えることで、一歩一歩確実に前進していきます。柔軟な発想と粘り強さを持って、どんな壁も乗り越えていけると信じています。そして、この経験を周囲の人々や社会にとって価値ある成果へとつなげていきたいと思います。
                             新しいことに挑む今この瞬間を楽しみながら、未来への大きな一歩を踏み出します！
                         </p>
+
+                        <h2>FAQ</h2>
+                        <Accordion heading="プログラミングのポイントについて">
+                            <p>プログラミングにおけるポイントは、単にコードを書くことだけでなく、問題解決や価値の創造のために、効率的かつ効果的なアプローチを取ることにあります。</p>
+                        </Accordion>
+                        <Accordion heading="古代語の解読について">
+                            <p>古代語の解読は、歴史や文化の理解を深め、人類の知識を広げる魅力的かつ挑戦的な分野です。</p>
+                        </Accordion>
+                        <Accordion heading="公開リポジトリの活用について">
+                            <p>公開リポジトリの活用は、ソフトウェア開発において非常に強力で多岐にわたる利点をもたらします。GitHub、GitLab、Bitbucket などのプラットフォームでの公開リポジトリを利用することにより、個人やチーム、さらにはコミュニティ全体での協力が可能になります。</p>
+                        </Accordion>
                     </PostBody>
                 </TwoColumnMain>
 
